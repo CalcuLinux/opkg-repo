@@ -1,6 +1,6 @@
-# CalcuLinux OPKG Repository
+# Calculinux OPKG Repository
 
-This repository serves as an OPKG package repository for CalcuLinux, the Linux distribution for Picocalc devices, hosted via GitHub Pages. It provides a centralized location for distributing IPK packages that can be installed on Picocalc devices running CalcuLinux.
+This repository serves as an OPKG package repository for Calculinux, the Linux distribution for Picocalc devices, hosted via GitHub Pages. It provides a centralized location for distributing IPK packages that can be installed on Picocalc devices running Calculinux.
 
 ## Repository Structure
 
