@@ -1,11 +1,11 @@
-# Picocalc OPKG Repository
+# CalcuLinux OPKG Repository
 
-This repository serves as an OPKG package repository for the Picocalc project, hosted via GitHub Pages. It provides a centralized location for distributing IPK packages that can be installed on Picocalc devices.
+This repository serves as an OPKG package repository for CalcuLinux, the Linux distribution for Picocalc devices, hosted via GitHub Pages. It provides a centralized location for distributing IPK packages that can be installed on Picocalc devices running CalcuLinux.
 
 ## Repository Structure
 
 ```
-picocalc-opkg-repo/
+opkg-repo/
 ├── ipk/                    # Package files organized by architecture
 │   ├── all/               # Architecture-independent packages
 │   ├── luckfox-lyra/      # ARM packages for Luckfox Lyra
@@ -25,7 +25,7 @@ picocalc-opkg-repo/
 
 1. Push this repository to GitHub:
    ```bash
-   git remote add origin https://github.com/YOUR_USERNAME/picocalc-opkg-repo.git
+   git remote add origin https://github.com/calculinux/opkg-repo.git
    git branch -M main
    git push -u origin main
    ```
@@ -34,7 +34,7 @@ picocalc-opkg-repo/
    - Go to your repository settings
    - Navigate to "Pages" section
    - Source: "GitHub Actions"
-   - The repository will be available at: `https://YOUR_USERNAME.github.io/picocalc-opkg-repo`
+   - The repository will be available at: `https://opkg.calculinux.org`
 
 ### 2. Adding Packages
 
@@ -71,11 +71,11 @@ git push
 Update your device's `/etc/opkg/opkg.conf` file:
 
 ```bash
-# Add these lines (replace YOUR_USERNAME with your GitHub username)
-src/gz all https://YOUR_USERNAME.github.io/picocalc-opkg-repo/ipk/all
-src/gz luckfox-lyra https://YOUR_USERNAME.github.io/picocalc-opkg-repo/ipk/luckfox-lyra
-src/gz any https://YOUR_USERNAME.github.io/picocalc-opkg-repo/ipk/any
-src/gz noarch https://YOUR_USERNAME.github.io/picocalc-opkg-repo/ipk/noarch
+# Add these lines (replace calculinux with your GitHub username)
+src/gz all https://opkg.calculinux.org/ipk/all
+src/gz luckfox-lyra https://opkg.calculinux.org/ipk/luckfox-lyra
+src/gz any https://opkg.calculinux.org/ipk/any
+src/gz noarch https://opkg.calculinux.org/ipk/noarch
 ```
 
 ## Usage on Target Device
