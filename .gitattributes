@@ -1,0 +1,2 @@
+*.ipk filter=lfs diff=lfs merge=lfs -text
+*.ipk.gz filter=lfs diff=lfs merge=lfs -text
